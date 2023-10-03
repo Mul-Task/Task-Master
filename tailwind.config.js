@@ -9,7 +9,8 @@ module.exports = {
 					100: "#fcfcfc",
 					200: "#F5F4F4 ",
 					300: "#F6F6F6",
-					400: "#6F6F6F",
+					400: "#DDDDDD",
+					500: "#6F6F6F",
 				},
 
 				height: {
