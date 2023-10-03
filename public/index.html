@@ -140,10 +140,37 @@
 		<!--Main Section-->
 		<!-- Project Name and Notification -->
 		<div class="flex justify-between">
-			<div class="project-name-section text-2xl mx-4 mt-2">
-				<h1 class="m-0">Task Master</h1>
+			<div class="project-name-section text-2xl mx-4 mt-2 flex">
+				<h1
+					class="m-0"
+					id="project-name"
+				>
+					Task Master
+				</h1>
+				<a
+					href="#"
+					id="edit-project-name"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-4 h-4 mt-2.5 ml-2"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+						/>
+					</svg>
+				</a>
 			</div>
-			<div class="mx-2 mt-3 w-7">
+			<div
+				class="mx-2 mt-3 w-7"
+				id="notification"
+			>
 				<a href="#">
 					<img
 						src="assets/icons/notification-bell.svg"
@@ -161,7 +188,7 @@
 				<div
 					class="md:min-h-[32rem] h-auto bg-secondary-200 m-4 p-2 rounded-xl flex flex-col justify-between"
 				>
-					<div>
+					<div id="todo-card">
 						<div class="flex justify-between">
 							<div class="flex">
 								<img
@@ -170,10 +197,18 @@
 									alt="Black Dot"
 								/>
 								<h1 class="px-1 text-lg font-semibold">Todo</h1>
-								<h2 class="my-0.5 px-2 bg-secondary-400 rounded-full">1</h2>
+								<h2
+									class="my-0.5 px-2 bg-secondary-400 rounded-full"
+									id="todo-counter"
+								>
+									0
+								</h2>
 							</div>
 							<div class="w-7">
-								<a href="#">
+								<a
+									href="#"
+									id="card-menu"
+								>
 									<img
 										class="hover:scale-90"
 										src="assets/icons/tablerdots.svg"
@@ -185,68 +220,12 @@
 						<div class="pl-2.5">
 							<h1 class="text-secondary-500">This item has not been started</h1>
 						</div>
-						<div
-							class="h-auto bg-white md:rounded-xl rounded-2xl mx-2 my-2 px-3 py-1"
-						>
-							<div class="">
-								<div class="flex justify-between">
-									<div class="flex">
-										<img
-											class="w-4"
-											src="assets/icons/black-dot-sign.svg"
-											alt="Black Dot"
-										/>
-										<h1 class="px-1 text-secondary-500">Task #3</h1>
-									</div>
-									<div class="flex">
-										<a href="#">
-											<div
-												class="w-4 h-4 rounded-full bg-priority-normal m-1"
-											></div>
-										</a>
-										<div>
-											<a href="#">
-												<img
-													class="w-6"
-													src="assets/icons/delete-icon.svg"
-													alt=""
-												/>
-											</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex justify-between">
-									<div class="flex">
-										<img
-											class="w-14 flex flex-col justify-center"
-											src="assets/icons/profile-pic.svg"
-											alt=""
-										/>
-										<div class="flex flex-col justify-center ml-2">
-											<div class="font-semibold">
-												<h1>Basic JS</h1>
-											</div>
-											<div class="text-xs text-secondary-500">
-												<h3>Creation Date: 10/01/23</h3>
-											</div>
-										</div>
-									</div>
-									<div class="flex flex-col justify-end">
-										<a href="#">
-											<img
-												class="w-6 mb-1 transform md:rotate-0 rotate-90"
-												src="assets/icons/forward-sign.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 					<div class="flex justify-end">
-						<a href="#">
+						<a
+							class="cursor-pointer"
+							id="add-todo-task"
+						>
 							<h1 class="hover:text-secondary-500">
 								Add Item
 								<span class="text-lg font-semibold">+</span>
@@ -261,7 +240,7 @@
 				<div
 					class="md:min-h-[32rem] h-auto bg-secondary-200 md:my-4 md:mx-0 mx-4 p-2 rounded-xl flex flex-col justify-between"
 				>
-					<div>
+					<div id="in-progress-card">
 						<div class="flex justify-between">
 							<div class="flex">
 								<img
@@ -270,10 +249,18 @@
 									alt="Black Dot"
 								/>
 								<h1 class="px-1 text-lg font-semibold">In Progress</h1>
-								<h2 class="my-0.5 px-2 bg-secondary-400 rounded-full">1</h2>
+								<h2
+									class="my-0.5 px-2 bg-secondary-400 rounded-full"
+									id="in-progress-counter"
+								>
+									0
+								</h2>
 							</div>
 							<div class="w-7">
-								<a href="#">
+								<a
+									href="#"
+									id="card-menu"
+								>
 									<img
 										class="hover:scale-90"
 										src="assets/icons/tablerdots.svg"
@@ -287,79 +274,12 @@
 								This is actively being worked on
 							</h1>
 						</div>
-						<div
-							class="h-auto bg-white md:rounded-xl rounded-2xl mx-2 my-2 px-3 py-1"
-						>
-							<div class="">
-								<div class="flex justify-between">
-									<div class="flex">
-										<img
-											class="w-4"
-											src="assets/icons/black-dot-sign.svg"
-											alt="Black Dot"
-										/>
-										<h1 class="px-1 text-secondary-500">Task #2</h1>
-									</div>
-									<div class="flex">
-										<a href="#">
-											<div
-												class="w-4 h-4 rounded-full bg-priority-medium m-1"
-											></div>
-										</a>
-										<div>
-											<a href="#">
-												<img
-													class="w-6"
-													src="assets/icons/delete-icon.svg"
-													alt=""
-												/>
-											</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex justify-between">
-									<div class="flex">
-										<img
-											class="w-14 flex flex-col justify-center"
-											src="assets/icons/profile-pic.svg"
-											alt=""
-										/>
-										<div class="flex flex-col justify-center ml-2">
-											<div class="font-semibold">
-												<h1>Basic CSS</h1>
-											</div>
-											<div class="text-xs text-secondary-500">
-												<h3>Creation Date: 10/01/23</h3>
-											</div>
-										</div>
-									</div>
-									<div class="flex">
-										<div class="flex flex-col justify-end">
-											<a href="#">
-												<img
-													class="w-6 mb-1 transform md:rotate-0 rotate-90"
-													src="assets/icons/backward-sign.svg"
-													alt=""
-												/>
-											</a>
-										</div>
-										<div class="flex flex-col justify-end">
-											<a href="#">
-												<img
-													class="w-6 mb-1 transform md:rotate-0 rotate-90"
-													src="assets/icons/forward-sign.svg"
-													alt=""
-												/>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 					<div class="flex justify-end">
-						<a href="#">
+						<a
+							href="#"
+							id="add-in-progress-task"
+						>
 							<h1 class="hover:text-secondary-500">
 								Add Item
 								<span class="text-lg font-semibold">+</span>
@@ -374,7 +294,7 @@
 				<div
 					class="md:min-h-[32rem] h-auto bg-secondary-200 m-4 p-2 rounded-xl flex flex-col justify-between"
 				>
-					<div>
+					<div id="done-card">
 						<div class="flex justify-between">
 							<div class="flex">
 								<img
@@ -383,10 +303,18 @@
 									alt="Black Dot"
 								/>
 								<h1 class="px-1 text-lg font-semibold">Done</h1>
-								<h2 class="my-0.5 px-2 bg-secondary-400 rounded-full">1</h2>
+								<h2
+									class="my-0.5 px-2 bg-secondary-400 rounded-full"
+									id="done-counter"
+								>
+									0
+								</h2>
 							</div>
 							<div class="w-7">
-								<a href="#">
+								<a
+									href="#"
+									id="card-menu"
+								>
 									<img
 										class="hover:scale-90"
 										src="assets/icons/tablerdots.svg"
@@ -398,68 +326,12 @@
 						<div class="pl-2.5">
 							<h1 class="text-secondary-500">This has been completed</h1>
 						</div>
-						<div
-							class="h-auto bg-white md:rounded-xl rounded-2xl mx-2 my-2 px-3 py-1"
-						>
-							<div class="">
-								<div class="flex justify-between">
-									<div class="flex">
-										<img
-											class="w-4"
-											src="assets/icons/black-dot-sign.svg"
-											alt="Black Dot"
-										/>
-										<h1 class="px-1 text-secondary-500">Task #1</h1>
-									</div>
-									<div class="flex">
-										<a href="#">
-											<div
-												class="w-4 h-4 rounded-full bg-priority-urgent m-1"
-											></div>
-										</a>
-										<div>
-											<a href="#">
-												<img
-													class="w-6"
-													src="assets/icons/delete-icon.svg"
-													alt=""
-												/>
-											</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex justify-between">
-									<div class="flex">
-										<img
-											class="w-14 flex flex-col justify-center"
-											src="assets/icons/profile-pic.svg"
-											alt=""
-										/>
-										<div class="flex flex-col justify-center ml-2">
-											<div class="font-semibold">
-												<h1>Basic HTML</h1>
-											</div>
-											<div class="text-xs text-secondary-500">
-												<h3>Creation Date: 10/01/23</h3>
-											</div>
-										</div>
-									</div>
-									<div class="flex flex-col justify-end">
-										<a href="#">
-											<img
-												class="w-6 mb-1 transform md:rotate-0 rotate-90"
-												src="assets/icons/backward-sign.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 					<div class="flex justify-end">
-						<a href="#">
+						<a
+							href="#"
+							id="add-done-task"
+						>
 							<h1 class="hover:text-secondary-500">
 								Add Item
 								<span class="text-lg font-semibold">+</span>
