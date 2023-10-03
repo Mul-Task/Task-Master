@@ -589,6 +589,16 @@ video {
   margin-right: 1.25rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -633,6 +643,18 @@ video {
   margin-top: 1.75rem;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.mr-20 {
+  margin-right: 5rem;
+}
+
+.mr-24 {
+  margin-right: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -667,6 +689,23 @@ video {
 
 .h-auto {
   height: auto;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
 .w-10 {
@@ -1086,6 +1125,16 @@ video {
     margin-bottom: 1.25rem;
   }
 
+  .sm\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .sm\:ml-10 {
     margin-left: 2.5rem;
   }
@@ -1114,12 +1163,24 @@ video {
     margin-top: 1.25rem;
   }
 
+  .sm\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:inline-block {
     display: inline-block;
   }
 
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:grid {
+    display: grid;
   }
 
   .sm\:hidden {
@@ -1177,6 +1238,16 @@ video {
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .md\:my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .md\:my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 
   .md\:mr-32 {
@@ -1288,6 +1359,16 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .lg\:my-7 {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
   .lg\:mr-48 {
     margin-right: 12rem;
   }
