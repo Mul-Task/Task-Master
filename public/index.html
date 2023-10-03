@@ -159,99 +159,313 @@
 			<!-- Todo card Section -->
 			<div class="todo card">
 				<div
-					class="md:min-h-[32rem] h-auto bg-secondary-200 m-4 p-2 rounded-xl"
+					class="md:min-h-[32rem] h-auto bg-secondary-200 m-4 p-2 rounded-xl flex flex-col justify-between"
 				>
-					<div class="flex justify-between">
-						<div class="flex">
-							<img
-								class="w-7"
-								src="../assets/icons/green-dot.svg"
-								alt="Black Dot"
-							/>
-							<h1 class="px-1 text-lg font-semibold">Todo</h1>
-							<h2 class="my-0.5 px-2 bg-secondary-400 rounded-full">1</h2>
-						</div>
-						<div class="w-7">
-							<a href="#">
+					<div>
+						<div class="flex justify-between">
+							<div class="flex">
 								<img
-									src="../assets/icons/tablerdots.svg"
-									alt=""
+									class="w-7"
+									src="../assets/icons/green-dot.svg"
+									alt="Black Dot"
 								/>
-							</a>
+								<h1 class="px-1 text-lg font-semibold">Todo</h1>
+								<h2 class="my-0.5 px-2 bg-secondary-400 rounded-full">1</h2>
+							</div>
+							<div class="w-7">
+								<a href="#">
+									<img
+										class="hover:scale-90"
+										src="../assets/icons/tablerdots.svg"
+										alt=""
+									/>
+								</a>
+							</div>
+						</div>
+						<div class="pl-2.5">
+							<h1 class="text-secondary-500">This item has not been started</h1>
+						</div>
+						<div
+							class="h-auto bg-white md:rounded-xl rounded-2xl mx-2 my-2 px-3 py-1"
+						>
+							<div class="">
+								<div class="flex justify-between">
+									<div class="flex">
+										<img
+											class="w-4"
+											src="../assets/icons/black-dot-sign.svg"
+											alt="Black Dot"
+										/>
+										<h1 class="px-1 text-secondary-500">Task #3</h1>
+									</div>
+									<div class="flex">
+										<a href="#">
+											<div
+												class="w-4 h-4 rounded-full bg-priority-normal m-1"
+											></div>
+										</a>
+										<div>
+											<a href="#">
+												<img
+													class="w-6"
+													src="../assets/icons/delete-icon.svg"
+													alt=""
+												/>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex justify-between">
+									<div class="flex">
+										<img
+											class="w-14 flex flex-col justify-center"
+											src="../assets/icons/profile-pic.svg"
+											alt=""
+										/>
+										<div class="flex flex-col justify-center ml-2">
+											<div class="font-semibold">
+												<h1>Basic JS</h1>
+											</div>
+											<div class="text-xs text-secondary-500">
+												<h3>Creation Date: 10/01/23</h3>
+											</div>
+										</div>
+									</div>
+									<div class="flex flex-col justify-end">
+										<a href="#">
+											<img
+												class="w-6 mb-1 transform md:rotate-0 rotate-90"
+												src="../assets/icons/forward-sign.svg"
+												alt=""
+											/>
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="pl-2.5">
-						<h1 class="text-secondary-500">This item has not been started</h1>
+					<div class="flex justify-end">
+						<a href="#">
+							<h1 class="hover:text-secondary-500">
+								Add Item
+								<span class="text-lg font-semibold">+</span>
+							</h1>
+						</a>
 					</div>
-					<div
-						class="h-28 bg-red-600 md:rounded-xl rounded-2xl mx-2 my-2"
-					></div>
 				</div>
 			</div>
 			<!-- Todo card Section -->
 			<!-- In Progress card Section -->
 			<div class="in-progress card">
 				<div
-					class="md:min-h-[32rem] h-auto bg-secondary-200 md:my-4 md:mx-0 mx-4 p-2 rounded-xl"
+					class="md:min-h-[32rem] h-auto bg-secondary-200 md:my-4 md:mx-0 mx-4 p-2 rounded-xl flex flex-col justify-between"
 				>
-					<div class="flex justify-between">
-						<div class="flex">
-							<img
-								class="w-7"
-								src="../assets/icons/purple-dot.svg"
-								alt="Black Dot"
-							/>
-							<h1 class="px-1 text-lg font-semibold">In Progress</h1>
-							<h2 class="my-0.5 px-2 bg-secondary-400 rounded-full">1</h2>
-						</div>
-						<div class="w-7">
-							<a href="#">
+					<div>
+						<div class="flex justify-between">
+							<div class="flex">
 								<img
-									src="../assets/icons/tablerdots.svg"
-									alt=""
+									class="w-7"
+									src="../assets/icons/purple-dot.svg"
+									alt="Black Dot"
 								/>
-							</a>
+								<h1 class="px-1 text-lg font-semibold">In Progress</h1>
+								<h2 class="my-0.5 px-2 bg-secondary-400 rounded-full">1</h2>
+							</div>
+							<div class="w-7">
+								<a href="#">
+									<img
+										class="hover:scale-90"
+										src="../assets/icons/tablerdots.svg"
+										alt=""
+									/>
+								</a>
+							</div>
+						</div>
+						<div class="pl-2.5">
+							<h1 class="text-secondary-500">
+								This is actively being worked on
+							</h1>
+						</div>
+						<div
+							class="h-auto bg-white md:rounded-xl rounded-2xl mx-2 my-2 px-3 py-1"
+						>
+							<div class="">
+								<div class="flex justify-between">
+									<div class="flex">
+										<img
+											class="w-4"
+											src="../assets/icons/black-dot-sign.svg"
+											alt="Black Dot"
+										/>
+										<h1 class="px-1 text-secondary-500">Task #2</h1>
+									</div>
+									<div class="flex">
+										<a href="#">
+											<div
+												class="w-4 h-4 rounded-full bg-priority-medium m-1"
+											></div>
+										</a>
+										<div>
+											<a href="#">
+												<img
+													class="w-6"
+													src="../assets/icons/delete-icon.svg"
+													alt=""
+												/>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex justify-between">
+									<div class="flex">
+										<img
+											class="w-14 flex flex-col justify-center"
+											src="../assets/icons/profile-pic.svg"
+											alt=""
+										/>
+										<div class="flex flex-col justify-center ml-2">
+											<div class="font-semibold">
+												<h1>Basic CSS</h1>
+											</div>
+											<div class="text-xs text-secondary-500">
+												<h3>Creation Date: 10/01/23</h3>
+											</div>
+										</div>
+									</div>
+									<div class="flex">
+										<div class="flex flex-col justify-end">
+											<a href="#">
+												<img
+													class="w-6 mb-1 transform md:rotate-0 rotate-90"
+													src="../assets/icons/backward-sign.svg"
+													alt=""
+												/>
+											</a>
+										</div>
+										<div class="flex flex-col justify-end">
+											<a href="#">
+												<img
+													class="w-6 mb-1 transform md:rotate-0 rotate-90"
+													src="../assets/icons/forward-sign.svg"
+													alt=""
+												/>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="pl-2.5">
-						<h1 class="text-secondary-500">This is actively being worked on</h1>
+					<div class="flex justify-end">
+						<a href="#">
+							<h1 class="hover:text-secondary-500">
+								Add Item
+								<span class="text-lg font-semibold">+</span>
+							</h1>
+						</a>
 					</div>
-					<div
-						class="h-28 bg-red-600 md:rounded-xl rounded-2xl mx-2 my-2"
-					></div>
 				</div>
 			</div>
 			<!-- In progress card Section -->
 			<!-- Done Card Section -->
 			<div class="done card">
 				<div
-					class="md:min-h-[32rem] h-auto bg-secondary-200 m-4 p-2 rounded-xl"
+					class="md:min-h-[32rem] h-auto bg-secondary-200 m-4 p-2 rounded-xl flex flex-col justify-between"
 				>
-					<div class="flex justify-between">
-						<div class="flex">
-							<img
-								class="w-7"
-								src="../assets/icons/yellow-dot.svg"
-								alt="Black Dot"
-							/>
-							<h1 class="px-1 text-lg font-semibold">Done</h1>
-							<h2 class="my-0.5 px-2 bg-secondary-400 rounded-full">1</h2>
-						</div>
-						<div class="w-7">
-							<a href="#">
+					<div>
+						<div class="flex justify-between">
+							<div class="flex">
 								<img
-									src="../assets/icons/tablerdots.svg"
-									alt=""
+									class="w-7"
+									src="../assets/icons/yellow-dot.svg"
+									alt="Black Dot"
 								/>
-							</a>
+								<h1 class="px-1 text-lg font-semibold">Done</h1>
+								<h2 class="my-0.5 px-2 bg-secondary-400 rounded-full">1</h2>
+							</div>
+							<div class="w-7">
+								<a href="#">
+									<img
+										class="hover:scale-90"
+										src="../assets/icons/tablerdots.svg"
+										alt=""
+									/>
+								</a>
+							</div>
+						</div>
+						<div class="pl-2.5">
+							<h1 class="text-secondary-500">This has been completed</h1>
+						</div>
+						<div
+							class="h-auto bg-white md:rounded-xl rounded-2xl mx-2 my-2 px-3 py-1"
+						>
+							<div class="">
+								<div class="flex justify-between">
+									<div class="flex">
+										<img
+											class="w-4"
+											src="../assets/icons/black-dot-sign.svg"
+											alt="Black Dot"
+										/>
+										<h1 class="px-1 text-secondary-500">Task #1</h1>
+									</div>
+									<div class="flex">
+										<a href="#">
+											<div
+												class="w-4 h-4 rounded-full bg-priority-urgent m-1"
+											></div>
+										</a>
+										<div>
+											<a href="#">
+												<img
+													class="w-6"
+													src="../assets/icons/delete-icon.svg"
+													alt=""
+												/>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex justify-between">
+									<div class="flex">
+										<img
+											class="w-14 flex flex-col justify-center"
+											src="../assets/icons/profile-pic.svg"
+											alt=""
+										/>
+										<div class="flex flex-col justify-center ml-2">
+											<div class="font-semibold">
+												<h1>Basic HTML</h1>
+											</div>
+											<div class="text-xs text-secondary-500">
+												<h3>Creation Date: 10/01/23</h3>
+											</div>
+										</div>
+									</div>
+									<div class="flex flex-col justify-end">
+										<a href="#">
+											<img
+												class="w-6 mb-1 transform md:rotate-0 rotate-90"
+												src="../assets/icons/backward-sign.svg"
+												alt=""
+											/>
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="pl-2.5">
-						<h1 class="text-secondary-500">This has been completed</h1>
+					<div class="flex justify-end">
+						<a href="#">
+							<h1 class="hover:text-secondary-500">
+								Add Item
+								<span class="text-lg font-semibold">+</span>
+							</h1>
+						</a>
 					</div>
-					<div
-						class="h-28 bg-red-600 md:rounded-xl rounded-2xl mx-2 my-2"
-					></div>
 				</div>
 			</div>
 			<!-- Done Card Section -->
@@ -260,7 +474,44 @@
 		<!--Main Section-->
 
 		<!--Footer Section-->
-		<div class="footer-section"></div>
+		<div
+			class="footer-section h-auto mt-1 bg-secondary-300 text-secondary-500 flex sm:flex-row flex-col justify-between"
+		>
+			<div class="sm:ml-10 sm:mt-6 ml-7 mt-4 text-3xl">
+				<a href="#">
+					<h1 class="hover:text-black">Task Master</h1>
+				</a>
+			</div>
+			<div
+				class="flex sm:flex-row flex-col justify-evenly leading-7 md:mr-32 sm:mr-14 my-3"
+			>
+				<ul class="sm:mx-10 mx-4 flex sm:flex-col">
+					<a href="#">
+						<li class="hover:text-black sm:m-0 mx-2">Blog</li>
+					</a>
+					<a href="#">
+						<li class="hover:text-black sm:m-0 mx-2">About</li>
+					</a>
+					<a href="#">
+						<li class="hover:text-black sm:m-0 mx-2">Shop</li>
+					</a>
+					<a href="#">
+						<li class="hover:text-black sm:m-0 mx-2">Contact</li>
+					</a>
+				</ul>
+				<ul class="sm:mx-10 mx-4 flex sm:flex-col">
+					<a href="#">
+						<li class="hover:text-black sm:m-0 mx-2">Terms</li>
+					</a>
+					<a href="#">
+						<li class="hover:text-black sm:m-0 mx-2">Privacy</li>
+					</a>
+					<a href="#">
+						<li class="hover:text-black sm:m-0 mx-2">Docs</li>
+					</a>
+				</ul>
+			</div>
+		</div>
 		<!--Footer Section-->
 
 		<!--Script-->

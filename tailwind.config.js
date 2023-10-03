@@ -12,14 +12,20 @@ module.exports = {
 					400: "#DDDDDD",
 					500: "#6F6F6F",
 				},
-
-				height: {
-					128: "32rem",
+				priority: {
+					normal: "#28BD10",
+					medium: "#F2D226",
+					urgent: "#F22626",
 				},
+			},
 
-				minHeight: {
-					128: "32rem",
-				},
+			height: {
+				128: "32rem",
+			},
+
+			minHeight: {
+				32: "7rem",
+				128: "32rem",
 			},
 		},
 	},
