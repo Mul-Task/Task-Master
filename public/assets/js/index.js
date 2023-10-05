@@ -354,6 +354,7 @@ add_done_task.addEventListener("click", () => {
 
 // In Done Handler
 
+// Task dlt
 function dlt_task() {
 	dlt.forEach((element) => {
 		element.addEventListener("click", () => {
@@ -365,3 +366,5 @@ function dlt_task() {
 		});
 	});
 }
+
+// Task dlt
